@@ -39,6 +39,23 @@ int main (){
        x++;
 
     } while (x <= 8);
+
+
+    printf("\n");
+
+
+    printf("Cavalo:\n"); // Titulo da peça!!! Na Estrura de Repetição 
+
+    
+    int movL = 1;
+
+    while (movL--)
+    {
+        for(int i = 0; i < 2; i++){
+            printf("Baixo\n");
+        } 
+        printf("Esquerda\n");
+    }
     
 
 
