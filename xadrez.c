@@ -1,4 +1,4 @@
-#include <stdio.h>
+/*#include <stdio.h>
 
 int main (){
 
@@ -59,6 +59,59 @@ int main (){
     
 
 
+
+
+
+    return 0;
+}
+
+
+*/
+
+#include <stdio.h>
+
+void moverTorre(int casas){
+    if (casas > 0) {
+        printf("Direita\n");
+       
+        moverTorre (casas - 1);
+    }
+}
+
+void moverBispo(int casas){
+    if (casas > 0) {
+        printf("Cima, Direita\n");
+       
+        moverBispo (casas - 1);
+    }
+}
+
+void moverRainha(int casas){
+    if (casas > 0) {
+        printf("Esquerda\n");
+       
+        moverRainha (casas - 1);
+    }
+}
+
+
+
+
+
+int main(){
+
+    printf("Torre:\n");
+    moverTorre(5);
+
+    printf("\n");
+
+    printf("Bispo:\n");
+    moverBispo(5);
+
+    printf("\n");
+
+    printf("Rainha:\n");
+    moverRainha(8);
 
 
 
